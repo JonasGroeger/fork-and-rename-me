@@ -8,7 +8,7 @@ description: |
   ergonomic design make development not only
   productive but also an enjoyable experience.
 grade: stable
-confinement: devmode
+confinement: classic
 architectures:
   - amd64
 
@@ -28,3 +28,4 @@ parts:
   intellij-idea-community:
     plugin: dump
     source: https://download.jetbrains.com/idea/ideaIC-$SNAPCRAFT_PROJECT_VERSION.tar.gz
+
