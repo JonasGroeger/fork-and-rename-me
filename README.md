@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/JonasGroeger/intellij-idea-community/master/logo.png" alt="IntelliJ IDEA Community">
+  <img src="https://raw.githubusercontent.com/JonasGroeger/intellij-idea-community/master/logo-400.png" alt="IntelliJ IDEA Community">
   <br />
   IntelliJ IDEA Community
 </h1>
@@ -44,7 +44,7 @@ upstream so [Project] can authoritatively publish future releases.
   - [X] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
   - [X] Publish the confined snap in the Snap store beta channel
   - [X] Update the install instructions in this `README.md`
-  - [ ] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [link]()
+  - [ ] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [link](https://forum.snapcraft.io/t/call-for-testing-intellij-idea-community/2298)
   - [ ] Ask a [Snapcrafters admin](https://github.com/orgs/snapcrafters/people?query=%20role%3Aowner) to fork your repo into github.com/snapcrafters, transfer the snap name from you to snapcrafters, and configure the repo for automatic publishing into edge on commit
   - [ ] Add the provided Snapcraft build badge to this `README.md`
   - [ ] Publish the snap in the Snap store stable channel
