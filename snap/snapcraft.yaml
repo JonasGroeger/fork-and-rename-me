@@ -1,15 +1,30 @@
-name: my-snap-name # you probably want to 'snapcraft register <name>'
-version: '0.1' # just for humans, typically '1.2+git' or '1.3.2'
-summary: Single-line elevator pitch for your amazing snap # 79 char long summary
+name: intellij-idea-community # you probably want to 'snapcraft register <name>'
+version: '2017.2.5'
+summary: Java, Scala, Kotlin IDE for JVM and Android development
 description: |
-  This is my-snap's description. You have a paragraph or two to tell the
-  most important story about your snap. Keep it under 100 words though,
-  we live in tweetspace and your description wants to look good in the snap
-  store.
+  Every aspect of IntelliJ IDEA is specifically
+  designed to maximize developer productivity.
+  Together, powerful static code analysis and
+  ergonomic design make development not only
+  productive but also an enjoyable experience.
+grade: stable
+confinement: devmode
+architectures:
+  - amd64
 
-confinement: devmode # use 'strict' once you have the right plugs and slots
+apps:
+  intellij-idea-community:
+    command: bin/idea.sh
+    desktop: intellij-idea-community.desktop
 
 parts:
-  my-part:
-    # See 'snapcraft plugins'
-    plugin: nil
+  desktop:
+    after:
+      - intellij-idea-community
+    plugin: dump
+    source: .
+    prime:
+      - intellij-idea-community.desktop
+  intellij-idea-community:
+    plugin: dump
+    source: https://download.jetbrains.com/idea/ideaIC-$SNAPCRAFT_PROJECT_VERSION.tar.gz

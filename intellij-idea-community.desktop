@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IntelliJ IDEA Community
+Comment=Java, Groovy, Scala and Android development.
+Exec=/bin/idea.sh %u
+Icon=/bin/idea.png
+Type=Application
+Categories=Development;IDE;
+StartupWMClass=jetbrains-idea-ce
